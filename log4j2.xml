@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Properties>
+        <!--%highlight{%pid}   Outputs the process ID if supported by the underlying platform. An optional default value may be specified to be shown if the platform does not support process IDs.-->
+        <Property name="layoutpatternconsole">%d{dd-MM-yyyy HH:mm:ss.SSS}  %highlight{%-5.8level} %style{---}{Magenta} [%21.35tn] <!--[Thread id:%-3.4tid]--> %style{%-45.50c{2}}{bright,cyan} <!--[Line:%L]--> : %m %ex %n </Property>
+        <Property name="layoutpatternfile">%d{dd-MM-yyyy HH:mm:ss.SSS}  %-5.8level --- [%21.35tn] <!--[%tid] --> %-45.50c{2} : %m %ex %n </Property>
+    </Properties>
+    <Appenders>
+        <File name="tracefile" fileName="trace.log">
+            <PatternLayout>
+                <Pattern>${layoutpatternfile}</Pattern>
+            </PatternLayout>
+        </File>
+        <File name="warnfile" fileName="warn.log">
+            <PatternLayout>
+                <Pattern>${layoutpatternfile}</Pattern>
+            </PatternLayout>
+        </File>
+        <File name="infofile" fileName="info.log">
+            <PatternLayout>
+                <Pattern>${layoutpatternfile}</Pattern>
+            </PatternLayout>
+        </File>
+
+        <Console name="STDOUT" target="SYSTEM_OUT">
+            <PatternLayout pattern="${layoutpatternconsole}"/>
+        </Console>
+    </Appenders>
+    <Loggers>
+        <Root level="trace">
+            <AppenderRef ref="tracefile" level="TRACE"/>
+            <AppenderRef ref="infofile" level="INFO"/>
+            <AppenderRef ref="warnfile" level="WARN"/>
+            <AppenderRef ref="STDOUT" level="INFO"/>
+        </Root>
+    </Loggers>
+</Configuration>

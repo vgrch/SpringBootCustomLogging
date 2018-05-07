@@ -1,0 +1,34 @@
+07-05-2018 14:48:13.746  INFO  --- [                 main]  log4j2.Log4j2Application                      : Starting Log4j2Application on ROOT-PC with PID 640 (started by USER in D:\LSIM projects\log4j2Logging)  
+07-05-2018 14:48:13.747  INFO  --- [                 main]  log4j2.Log4j2Application                      : No active profile set, falling back to default profiles: default  
+07-05-2018 14:48:13.843  INFO  --- [                 main]  dded.AnnotationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@768c6891: startup date [Mon May 07 14:48:13 GMT+04:00 2018]; root of context hierarchy  
+07-05-2018 14:48:14.288  INFO  --- [   background-preinit]  util.Version                                  : HV000001: Hibernate Validator 5.3.6.Final  
+07-05-2018 14:48:15.638  INFO  --- [                 main]  tomcat.TomcatEmbeddedServletContainer         : Tomcat initialized with port(s): 8081 (http)  
+07-05-2018 14:48:15.672  INFO  --- [                 main]  http11.Http11NioProtocol                      : Initializing ProtocolHandler ["http-nio-8081"]  
+07-05-2018 14:48:15.682  INFO  --- [                 main]  core.StandardService                          : Starting service [Tomcat]  
+07-05-2018 14:48:15.683  INFO  --- [                 main]  core.StandardEngine                           : Starting Servlet Engine: Apache Tomcat/8.5.29  
+07-05-2018 14:48:15.846  INFO  --- [localhost-startStop-1]  [localhost].[/log4j2]                         : Initializing Spring embedded WebApplicationContext  
+07-05-2018 14:48:15.846  INFO  --- [localhost-startStop-1]  context.ContextLoader                         : Root WebApplicationContext: initialization completed in 2006 ms  
+07-05-2018 14:48:16.081  INFO  --- [localhost-startStop-1]  servlet.ServletRegistrationBean               : Mapping servlet: 'dispatcherServlet' to [/]  
+07-05-2018 14:48:16.085  INFO  --- [localhost-startStop-1]  servlet.FilterRegistrationBean                : Mapping filter: 'characterEncodingFilter' to: [/*]  
+07-05-2018 14:48:16.086  INFO  --- [localhost-startStop-1]  servlet.FilterRegistrationBean                : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]  
+07-05-2018 14:48:16.086  INFO  --- [localhost-startStop-1]  servlet.FilterRegistrationBean                : Mapping filter: 'httpPutFormContentFilter' to: [/*]  
+07-05-2018 14:48:16.086  INFO  --- [localhost-startStop-1]  servlet.FilterRegistrationBean                : Mapping filter: 'requestContextFilter' to: [/*]  
+07-05-2018 14:48:16.667  INFO  --- [                 main]  annotation.RequestMappingHandlerAdapter       : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@768c6891: startup date [Mon May 07 14:48:13 GMT+04:00 2018]; root of context hierarchy  
+07-05-2018 14:48:16.758  INFO  --- [                 main]  annotation.RequestMappingHandlerMapping       : Mapped "{[/test]}" onto public java.lang.String az.lsim.log4j2.TestController.test()  
+07-05-2018 14:48:16.768  INFO  --- [                 main]  annotation.RequestMappingHandlerMapping       : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)  
+07-05-2018 14:48:16.768  INFO  --- [                 main]  annotation.RequestMappingHandlerMapping       : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)  
+07-05-2018 14:48:16.896  INFO  --- [                 main]  handler.SimpleUrlHandlerMapping               : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]  
+07-05-2018 14:48:16.896  INFO  --- [                 main]  handler.SimpleUrlHandlerMapping               : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]  
+07-05-2018 14:48:16.974  INFO  --- [                 main]  handler.SimpleUrlHandlerMapping               : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]  
+07-05-2018 14:48:17.496  INFO  --- [                 main]  annotation.AnnotationMBeanExporter            : Registering beans for JMX exposure on startup  
+07-05-2018 14:48:17.581  INFO  --- [                 main]  http11.Http11NioProtocol                      : Starting ProtocolHandler ["http-nio-8081"]  
+07-05-2018 14:48:17.946  INFO  --- [                 main]  net.NioSelectorPool                           : Using a shared selector for servlet write/read  
+07-05-2018 14:48:17.975  INFO  --- [                 main]  tomcat.TomcatEmbeddedServletContainer         : Tomcat started on port(s): 8081 (http)  
+07-05-2018 14:48:17.982  INFO  --- [                 main]  log4j2.Log4j2Application                      : Started Log4j2Application in 4.99 seconds (JVM running for 6.254)  
+07-05-2018 14:48:28.865  INFO  --- [ http-nio-8081-exec-2]  [localhost].[/log4j2]                         : Initializing Spring FrameworkServlet 'dispatcherServlet'  
+07-05-2018 14:48:28.866  INFO  --- [ http-nio-8081-exec-2]  servlet.DispatcherServlet                     : FrameworkServlet 'dispatcherServlet': initialization started  
+07-05-2018 14:48:28.889  INFO  --- [ http-nio-8081-exec-2]  servlet.DispatcherServlet                     : FrameworkServlet 'dispatcherServlet': initialization completed in 23 ms  
+07-05-2018 14:48:28.916  WARN  --- [ http-nio-8081-exec-2]  log4j2.TestController                         : warn message  
+07-05-2018 14:48:28.917  INFO  --- [ http-nio-8081-exec-2]  log4j2.TestController                         : info message  
+07-05-2018 14:48:28.917  ERROR --- [ http-nio-8081-exec-2]  log4j2.TestController                         : error message  
+07-05-2018 14:48:28.918  FATAL --- [ http-nio-8081-exec-2]  log4j2.TestController                         : FATAL message  
